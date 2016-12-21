@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 // const uglify = require('gulp-uglify')
 // const streamify = require('gulp-streamify')
+const rename = require('gulp-rename')
 const gutil = require('gulp-util')
 const source = require('vinyl-source-stream')
 
@@ -13,12 +14,12 @@ const babelify = require('babelify').configure({
 })
 const history = require('connect-history-api-fallback')
 
-const entry = './src/app.js'
+const entry = ['./app', './component', './model']
 const entryDemo = './index.demo.js'
-const outfile = 'bundle.js'
+const outfile = 'choo-md-editor.js'
 const production = process.env.NODE_ENV === 'production'
 
-const handleError = (err) => {
+function handleError (err) {
   gutil.log(err)
   gutil.beep()
   this.emit('end')
@@ -54,15 +55,28 @@ gulp.task('watch', ['sass'], function (cb) {
   }).on('exit', cb)
 })
 
+gulp.task('sass-bundle', () => {
+  gulp.src('./src/sass/main.scss')
+    .pipe(sass({
+      outputStyle: production ? 'compressed' : undefined,
+      includePaths: [ resetCSS ]
+    }).on('error', sass.logError))
+    .pipe(rename('choo-md-editor.css'))
+    .pipe(gulp.dest('./dist'))
+})
+
 // the distribution bundle task
-gulp.task('bundle', ['sass'], function () {
-  var bundler = browserify(entry, { transform: babelify })
+gulp.task('bundle', ['sass-bundle'], function () {
+  var bundler = browserify(entry, { transform: babelify, debug: false })
+        .ignore('choo')
+        .ignore('lodash')
+        .ignore('marked')
         .bundle()
   return bundler
     .pipe(source(outfile))
     // .pipe(streamify(uglify()))
     .on('error', handleError)
-    .pipe(gulp.dest('./app'))
+    .pipe(gulp.dest('./dist'))
 })
 
 gulp.task('default', ['watch'])
