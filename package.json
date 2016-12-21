@@ -6,6 +6,7 @@
   "repository": "https://github.com/dbtek/choo-md-editor.git",
   "scripts": {
     "test": "standard",
+    "start": "gulp",
     "build": "npm test && NODE_ENV='production' gulp sass-bundle"
   },
   "keywords": [
