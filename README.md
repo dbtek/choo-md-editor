@@ -3,6 +3,8 @@ Choo Markdown Editor [![Standard - JavaScript Style Guide](https://img.shields.i
 
 Markdown Editor built with Choo / for Choo. It can be used inside a Choo app or as a standalone library.
 
+![screenshot](ss.png)
+
 ### Install
 ```bash
  $ npm i -S choo-md-editor
