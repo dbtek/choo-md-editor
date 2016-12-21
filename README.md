@@ -15,7 +15,7 @@ choo-md-editor depends on some parts of Bulma styles. If you use Bulma in your p
 ```js
   const element = document.getElementById('editor-container')
   const editor = require('choo-md-editor')
-  editor.app(element, {onChange: (val) => console.info('Markdown changed', val)})
+  editor(element, {onChange: (val) => console.info('Markdown changed', val)})
 ```
 
 #### Inside choo app
