@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/dbtek/choo-md-editor#readme",
   "dependencies": {
-    "choo-md-editor": "git+https://github.com/dbtek/choo-md-editor.git"
+    "choo-md-editor": "^0.1.0"
   }
 }
