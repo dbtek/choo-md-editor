@@ -1,0 +1,22 @@
+{
+  "name": "choo-md-editor-demo",
+  "version": "1.0.0",
+  "description": "Demo purposed project for choo-md-editor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbtek/choo-md-editor.git"
+  },
+  "author": "İsmail Demirbilek <ce.demirbilek@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbtek/choo-md-editor/issues"
+  },
+  "homepage": "https://github.com/dbtek/choo-md-editor#readme",
+  "dependencies": {
+    "choo-md-editor": "git+https://github.com/dbtek/choo-md-editor.git"
+  }
+}
