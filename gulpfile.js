@@ -62,7 +62,7 @@ gulp.task('sass-bundle', () => {
       includePaths: [ resetCSS ]
     }).on('error', sass.logError))
     .pipe(rename('choo-md-editor.css'))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./'))
 
   gulp.src('./src/sass/bulma-ext.scss')
     .pipe(sass({
@@ -70,7 +70,7 @@ gulp.task('sass-bundle', () => {
       includePaths: [ resetCSS ]
     }).on('error', sass.logError))
     .pipe(rename('choo-md-editor.bulma.css'))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./'))
 })
 
 // the distribution bundle task
