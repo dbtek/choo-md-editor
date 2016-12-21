@@ -11,6 +11,12 @@ Markdown Editor built with Choo / for Choo. It can be used inside a Choo app or 
 ### Usage
 choo-md-editor depends on some parts of Bulma styles. If you use Bulma in your project use `choo-md-editor.bulma.css` instead of whole `choo-md-editor.css`.
 
+Material Icons are being used please include it's css too.
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
 #### Standalone Library
 ```js
   const element = document.getElementById('editor-container')
