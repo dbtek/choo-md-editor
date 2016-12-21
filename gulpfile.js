@@ -63,15 +63,20 @@ gulp.task('sass-bundle', () => {
     }).on('error', sass.logError))
     .pipe(rename('choo-md-editor.css'))
     .pipe(gulp.dest('./dist'))
+
+  gulp.src('./src/sass/bulma-ext.scss')
+    .pipe(sass({
+      outputStyle: production ? 'compressed' : undefined,
+      includePaths: [ resetCSS ]
+    }).on('error', sass.logError))
+    .pipe(rename('choo-md-editor.bulma.css'))
+    .pipe(gulp.dest('./dist'))
 })
 
 // the distribution bundle task
 gulp.task('bundle', ['sass-bundle'], function () {
   var bundler = browserify(entry, { transform: babelify, debug: false })
-        .ignore('choo')
-        .ignore('lodash')
-        .ignore('marked')
-        .bundle()
+    .bundle()
   return bundler
     .pipe(source(outfile))
     // .pipe(streamify(uglify()))
