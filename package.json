@@ -2,10 +2,11 @@
   "name": "choo-md-editor",
   "version": "0.1.0",
   "description": "A featured lightweight markdown editor built for choo.",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/dbtek/choo-md-editor.git",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "NODE_ENV='production' gulp bundle"
   },
   "keywords": [
     "choo",
