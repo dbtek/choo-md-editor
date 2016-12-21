@@ -1,0 +1,39 @@
+{
+  "name": "choo-md-editor",
+  "version": "0.1.0",
+  "description": "A featured lightweight markdown editor built for choo.",
+  "main": "index.js",
+  "repository": "https://github.com/dbtek/choo-md-editor.git",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "choo",
+    "markdown",
+    "editor"
+  ],
+  "author": "İsmail Demirbilek <ce.demirbilek@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^3.3.0",
+    "lodash": "^4.17.2",
+    "marked": "^0.3.6"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "budo": "^9.2.2",
+    "bulma": "^0.2.3",
+    "connect-history-api-fallback": "^1.3.0",
+    "es2020": "^1.1.9",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "node": "0.0.0",
+    "node-reset-scss": "^1.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

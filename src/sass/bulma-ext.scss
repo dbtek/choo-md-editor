@@ -1,0 +1,19 @@
+.nav {
+  &.is-inverted {
+    background: $text;
+
+    .nav-item {
+      color: $grey-light;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.md-preview {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  background: #fff;
+}
