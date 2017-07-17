@@ -1,4 +1,5 @@
 Choo Markdown Editor [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fdbtek%2Fchoo-md-editor.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fdbtek%2Fchoo-md-editor?ref=badge_shield)
 ===
 
 Markdown Editor built with Choo / for Choo. It can be used inside a Choo app or as a standalone library.
@@ -49,3 +50,7 @@ Material Icons are being used please include it's css too.
 
 ### Author
 İsmail Demirbilek [@dbtek](https://twitter.com/dbtek)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fdbtek%2Fchoo-md-editor.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fdbtek%2Fchoo-md-editor?ref=badge_large)
